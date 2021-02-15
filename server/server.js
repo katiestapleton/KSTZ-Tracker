@@ -17,8 +17,8 @@ portfinder.getPort((err, port) => {
 
 
 // connect to database via mongoose
-var uriMdb = 'mongodb+srv://adm_user:twIfreTC6Arz4Ktt@trackerdb.dtouv.mongodb.net/default?retryWrites=true&w=majority'
-mongoose.connect(uriMdb, { useUnifiedTopology: true, useNewUrlParser: true });
+var uri = 'mongodb+srv://adm_user:twIfreTC6Arz4Ktt@trackerdb.dtouv.mongodb.net/default?retryWrites=true&w=majority'
+mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once("open", function() {
