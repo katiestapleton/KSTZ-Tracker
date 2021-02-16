@@ -1,7 +1,8 @@
 {
-  "name": "mern-app-bugtracker",
-  "version": "0.1.0",
-  "private": true,
+  "name": "defaultpkg",
+  "version": "1.0.0",
+  "description": "web-based ticket tracking system",
+  "main": "server.js",
   "dependencies": {
     "accepts": "^1.3.7",
     "array-flatten": "^1.1.1",
@@ -22,7 +23,6 @@
     "denque": "^1.5.0",
     "depd": "^1.1.2",
     "destroy": "^1.0.4",
-    "dotenv": "^8.2.0",
     "ecdsa-sig-formatter": "^1.0.11",
     "ee-first": "^1.1.1",
     "encodeurl": "^1.0.2",
@@ -95,42 +95,28 @@
     "unpipe": "^1.0.0",
     "util-deprecate": "^1.0.2",
     "utils-merge": "^1.0.1",
-    "vary": "^1.1.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.21.1",
-    "bootstrap": "^4.4.1",
-    "chart.js": "^2.9.3",
-    "react": "^16.12.0",
-    "react-chartjs-2": "^2.8.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.4"
+    "vary": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiestapleton/KSTZ-Tracker.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "ticket",
+    "tracket",
+    "bug",
+    "tracker",
+    "mern",
+    "rest",
+    "mobile-friendly"
+  ],
+  "author": "Katie Stapleton, Terrence Chan, Zetta Lewis, Sandra Zamora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katiestapleton/KSTZ-Tracker/issues"
   },
-  "description": "This project was bootstrapped with [Create React App].",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "homepage": "https://github.com/katiestapleton/KSTZ-Tracker#readme"
 }
