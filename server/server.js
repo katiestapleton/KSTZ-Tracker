@@ -10,7 +10,8 @@ const app = express();
 portfinder.getPort((err, port) => {
   if (err) {
     console.log(err)
-  } else {
+  } 
+  else {
     app.listen(port, () => {
     // console.log(`Server is running on port: http://${config.dev.host}:${port}`)
     console.log(`Server is running on port: http://localhost:${port}!`)
