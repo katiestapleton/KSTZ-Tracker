@@ -4,21 +4,12 @@ const portfinder = require('portfinder');
 require('dotenv').config()
 
 const app = express();
+const port = 5000;
 
 
-// finds free port. removes need for hard-coded port
-portfinder.getPort((err, port) => {
-  if (err) {
-    console.log(err)
-  } 
-  else {
-    app.listen(port, () => {
-    // console.log(`Server is running on port: http://${config.dev.host}:${port}`)
-    console.log(`Server is running on port: http://localhost:${port}!`)
-    })
-  }
+app.listen(port, function() {
+  console.log("Server is running on Port: " + port);
 });
-
 
 // connect to database via mongoose
 // .env file required to access mongo DB
