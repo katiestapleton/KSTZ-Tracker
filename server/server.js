@@ -1,20 +1,25 @@
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose")
-//temporary: hard port will be changed to static
-const port=3005;
+const portfinder = require('portfinder');
+require('dotenv').config()
+
+const app = express();
+const port = 5000;
+
 
 app.listen(port, function() {
-    console.log("Server is running on Port: " + port);
-  });
-
-// connect to database via mongoose
-var uri = 'mongodb+srv://adm_user:twIfreTC6Arz4Ktt@trackerdb.dtouv.mongodb.net/default?retryWrites=true&w=majority'
-mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
-const connection = mongoose.connection;
-
-connection.once("open", function() {
-  console.log("MongoDB database connection established successfully");
+  console.log("Server is running on Port: " + port);
 });
 
-//
+// connect to database via mongoose
+// .env file required to access mongo DB
+var mongoUri = process.env.DB_CONNECT_DEFAULT;
+mongoose.connect(mongoUri, { 
+  useUnifiedTopology: true, 
+  useNewUrlParser: true })
+  .then(() => 
+    console.log('MongoDB database connection established successfully!'))
+  .catch(err => {
+    console.log(Error, err.message);
+});
+
