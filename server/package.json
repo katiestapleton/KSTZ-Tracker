@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/katiestapleton/KSTZ-Tracker#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
-    "mongoose": "^5.11.17"
+    "mongoose": "^5.11.17",
+    "nodemon": "^2.0.7"
   }
 }
