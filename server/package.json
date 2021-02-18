@@ -1,0 +1,25 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "<h3>Welcome to the KTSZ Bug Tracking System!</h3>\r <p>Ticketing system application built with the MERN stack</p>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katiestapleton/KSTZ-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiestapleton/KSTZ-Tracker/issues"
+  },
+  "homepage": "https://github.com/katiestapleton/KSTZ-Tracker#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.17",
+    "nodemon": "^2.0.7"
+  }
+}
